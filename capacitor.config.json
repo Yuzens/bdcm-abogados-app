@@ -1,0 +1,8 @@
+{
+  "appId": "cl.bdcmabogados.app",
+  "appName": "BDCM Abogados",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
