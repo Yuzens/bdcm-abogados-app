@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Outer gold subtle ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#gold)" stroke-width="3" stroke-opacity="0.25" />
+
+  <!-- Scales of Justice Icon (Centering within safe zone) -->
+  <g filter="url(#shadow)" transform="translate(256, 230)">
+    <!-- Main Pillar / Column -->
+    <path d="M-8 -120 L8 -120 L12 -100 L6 140 L28 148 L28 165 L-28 165 L-28 148 L-6 140 L-12 -100 Z" fill="url(#gold)" />
+    <!-- Pillar Cap Finial -->
+    <circle cx="0" cy="-125" r="14" fill="url(#gold)" />
+    <circle cx="0" cy="-125" r="7" fill="#0f172a" />
+
+    <!-- Crossbeam (Balance bar) -->
+    <path d="M-150 -85 Q0 -98 150 -85 L148 -73 Q0 -86 -148 -73 Z" fill="url(#gold)" />
+    <circle cx="0" cy="-80" r="12" fill="url(#gold)" />
+    
+    <!-- Left Scale (Platillo Izquierdo) -->
+    <circle cx="-140" cy="-78" r="6" fill="url(#gold)" />
+    <line x1="-140" y1="-78" x2="-185" y2="-5" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" />
+    <line x1="-140" y1="-78" x2="-95" y2="-5" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" />
+    <!-- Left pan -->
+    <path d="M-195 -5 Q-140 45 -85 -5 Z" fill="url(#gold)" opacity="0.95" />
+    <ellipse cx="-140" cy="-5" rx="55" ry="8" fill="url(#gold)" />
+
+    <!-- Right Scale (Platillo Derecho) -->
+    <circle cx="140" cy="-78" r="6" fill="url(#gold)" />
+    <line x1="140" y1="-78" x2="95" y2="-5" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" />
+    <line x1="140" y1="-78" x2="185" y2="-5" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" />
+    <!-- Right pan -->
+    <path d="M85 -5 Q140 45 195 -5 Z" fill="url(#gold)" opacity="0.95" />
+    <ellipse cx="140" cy="-5" rx="55" ry="8" fill="url(#gold)" />
+  </g>
+
+  <!-- Typography BDCM -->
+  <text x="256" y="445" font-family="'Cinzel', Georgia, serif" font-size="44" font-weight="700" fill="url(#gold)" text-anchor="middle" letter-spacing="6">
+    BDCM
+  </text>
+  <text x="256" y="475" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="4">
+    ABOGADOS • CHILE
+  </text>
+</svg>
